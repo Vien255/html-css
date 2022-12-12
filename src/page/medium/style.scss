@@ -1,0 +1,40 @@
+.medium {
+  padding: 140px 140px 20px 140px;
+
+  &__img {
+    text-align: center;
+  }
+}
+
+.lg {
+  text-align: center;
+}
+
+.medium__img img {
+  width: 100%;
+}
+
+.vd img {
+  width: 100%;
+}
+
+@media only screen and (min-width: 391px) {
+  .pink {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .medium {
+    display: none;
+  }
+  .lg {
+    display: none;
+  }
+  .vd {
+    display: none;
+  }
+  .pink img {
+    width: 100%;
+  }
+}

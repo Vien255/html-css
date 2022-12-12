@@ -1,0 +1,44 @@
+.hero {
+  display: flex;
+  padding: 20px 160px;
+  justify-content: space-between;
+
+  &__left {
+    padding-top: 85px;
+  }
+
+  &__left input {
+    margin-top: 50px;
+    background: #fefefe;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    border: 0px;
+    padding: 10px;
+  }
+
+  &__right img {
+    width: 100%;
+  }
+}
+
+h1 {
+  text-align: center;
+}
+
+@media only screen and (max-width: 390px) {
+  .hero {
+    padding: 0px 40px;
+    display: flex;
+    flex-direction: column;
+
+    &__left {
+      padding-top: 0px;
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    &__left h1 {
+      width: 100%;
+    }
+  }
+}
